@@ -1,7 +1,7 @@
 /* The for principles of "this";
 * in your own words. explain the four principle for the "this" keyword below.
 *
-* 1. Default binding, window object.
+* 1. Window (default) binding, window object.
 * 2. Implicit binding, the object to the left of the dot.
 * 3. Explicit binding, uses call, apply, or bind.
 * 4. New binding, creates and empty object and inherits the prototype of the function.
@@ -64,6 +64,7 @@ let secondGhost = {
 }
 
 sayboo.call(firstGhost);
+
 let ghost2speak = sayboo.bind(secondGhost);
 ghost2speak();
 
